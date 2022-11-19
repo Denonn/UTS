@@ -1,4 +1,4 @@
-package sesi6.bangun_ruang;
+package uts;
 
 public class Balok extends implemen {
     private int Panjang ;
@@ -38,7 +38,34 @@ public class Balok extends implemen {
         return Panjang * Lebar * Tinggi;
     }
 
+
+    @Override
+    public double getLuas() {
+        return 2 * (Panjang * Lebar + Lebar * Tinggi + Panjang * Tinggi)  ;
+    }
+
     @Override
     public void setJari2(double jari2) {
     }
+
+    @Override
+    public double getS() {
+        return 0;
+    }
+
+    @Override
+    public void setS(double s) {
+        
+    }
+
+    @Override
+    public void setAlasPrisma(double alas) {
+        
+    }
+
+    @Override
+    public double setkeliling(double keliling) {
+        return 0;
+    }
+
 }

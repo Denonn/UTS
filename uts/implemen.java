@@ -1,4 +1,4 @@
-package sesi6.bangun_ruang;
+package uts;
 
 public abstract class implemen implements bangunRuang {
     protected double jari2 ;

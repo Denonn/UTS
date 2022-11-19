@@ -1,9 +1,10 @@
-package sesi6.bangun_ruang;
+package uts;
 
 public class Kerucut extends implemen{
     
     private double jari2 ;
     private double Tinggi ;
+    private double s ;
 
     public Kerucut(){
         setJari2(1);
@@ -41,6 +42,34 @@ public class Kerucut extends implemen{
 
     @Override
     public void setLebar(int Lebar) {
+    }
+
+    
+
+    @Override
+    public double getLuas() {
+        return 3.14 * jari2 * (jari2 + s) ; 
+    }
+
+    @Override
+    public double getS() {
+        return 0;
+    }
+
+    @Override
+    public void setS(double s) {
+        this.s = s < 0 ? 1 : s ;
+        
+    }
+
+    @Override
+    public void setAlasPrisma(double alas) {
+        
+    }
+
+    @Override
+    public double setkeliling(double keliling) {
+        return 0;
     }
 
 }
