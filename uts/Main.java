@@ -9,10 +9,10 @@ public class Main {
                 System.out.println("MENGHITUNG VOLUME BANGUN RUANG");
                 System.out.println("1. KERUCUT");
                 System.out.println("2. BALOK");
-                System.out.println("3. prisma");
-                System.out.println("4. tabung");
-                System.out.println("5. bola");
-                System.out.println("6. keluar");
+                System.out.println("3. PRISMA");
+                System.out.println("4. TABUNG");
+                System.out.println("5. BOLA");
+                System.out.println("6. KELUAR");
 
                 System.out.print("PILIH : ");
                 int pilih = input.nextInt();
@@ -24,9 +24,6 @@ public class Main {
 
                     System.out.print("Masukan tinggi : ");
                     double tinggi = input.nextDouble();
-
-                    System.out.print("Masukan panjang garis : ");
-                    double pg = input.nextDouble() ;
 
                     Kerucut k1 = new Kerucut();
                     k1.setJari2(jari2);
@@ -51,7 +48,7 @@ public class Main {
                     System.out.println("\nLUAS ADALAH : " + b1.getLuas());
                     System.out.println("VOLUMENYA ADALAH : " + b1.getVolume());
                 } else if (pilih == 3) {
-                    System.out.print("luas volue prisma");
+                    System.out.println("MENGHITUNG LUAS DAN VOLUME PRISMA");
 
                     System.out.print("masukan tinggi :");
                     Double tinggip = input.nextDouble();
@@ -66,11 +63,10 @@ public class Main {
                     p1.setAlasPrisma(alasp);
                     p1.setTinggi(tinggip);
                     p1.setkeliling(kelilingp);
-                    System.out.println("luas nya adalah : "+ p1.getLuas());
-                    System.out.println("volume nya adalah : "+ p1.getVolume());
-                    break;
+                    System.out.println("\nLUASNYA ADALAH : "+ p1.getLuas());
+                    System.out.println("VOLUMENYA ADALAH : "+ p1.getVolume());
                 } else if (pilih == 4) {
-                    System.out.println("\nmenghitung tabung luas volume ".toUpperCase());
+                    System.out.println("\nmenghitung volume dan luas tabung".toUpperCase());
                     System.out.print("\nMasukan jari-jari : ");
                     int jari2p = input.nextInt();
 
@@ -85,7 +81,7 @@ public class Main {
                     System.out.println("VOLUMENYA ADALAH : " + t1.getVolume()); 
                 }
                 else if (pilih == 5) {
-                    System.out.println("\nmenghitung bola".toUpperCase());
+                    System.out.println("\nmenghitung volume dan luas bola".toUpperCase());
                     System.out.print("\nMasukan jari-jari : ");
                     int jari2p = input.nextInt();
 
@@ -94,7 +90,8 @@ public class Main {
                     bola1.setJari2(jari2p);
                     System.out.println("\nLUAS ADALAH : " + bola1.getLuas());
                     System.out.println("VOLUMENYA ADALAH : " + bola1.getVolume()); 
-                }else if (pilih != 6){
+                }else if (pilih == 6){
+                    System.out.println("berhasil keluar");
                     break;
                 }
                     else {
